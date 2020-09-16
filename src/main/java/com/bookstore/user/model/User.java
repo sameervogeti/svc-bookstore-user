@@ -5,6 +5,19 @@ import org.hibernate.annotations.GeneratorType;
 
 import javax.persistence.*;
 
+@NamedQueries(
+        {
+                @NamedQuery(
+                        name = "User.finduserByEmail",
+                        query = "from users e where e.email = :email"
+                ),
+                @NamedQuery(
+                        name = "User.finduserByEmailandPassword",
+                        query = "from users e where e.email = :email and e.password=:password"
+                )
+
+        }
+)
 @Entity
 @Data
 @Table(name = "users")
