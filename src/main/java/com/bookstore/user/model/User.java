@@ -1,25 +1,19 @@
 package com.bookstore.user.model;
 
 import lombok.Data;
-import org.hibernate.annotations.GeneratorType;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
-@NamedQueries(
-        {
-                @NamedQuery(
-                        name = "User.finduserByEmail",
-                        query = "from users e where e.email = :email"
-                ),
-                @NamedQuery(
-                        name = "User.finduserByEmailandPassword",
-                        query = "from users e where e.email = :email and e.password=:password"
-                )
 
-        }
-)
+
 @Entity
 @Data
+@Getter
+@Setter
+@ToString
 @Table(name = "users")
 public class User {
 
