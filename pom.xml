@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bookstore</groupId>
-	<artifactId>user</artifactId>
+	<artifactId>svc-bookstore-user</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>svc-bookstore-user</name>
 	<description>Microservice To be used for User Management purposes for the Online Book Store Application</description>
